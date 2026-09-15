@@ -24,12 +24,34 @@ export default function TabLayout() {
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="historique"
         options={{
-          title: 'Explore',
+          title: 'Historique',
           tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
         }}
       />
+
+      <Tabs.Screen
+        name="statistique"
+        options={{
+          title: 'Statistiques',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="chart.bar.fill" color={color} />,
+        }}
+      />
+
+      <Tabs.Screen
+      name="plus"
+      options={{
+        title: 'Plus',
+        tabBarIcon: ({ color }) => ( <IconSymbol size={28} name="folder.fill" color={color} />
+        ),
+      }}
+    />
+    
     </Tabs>
+
+    
   );
 }
+
+
